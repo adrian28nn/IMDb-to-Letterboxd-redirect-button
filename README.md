@@ -1,0 +1,1 @@
+Firefox Add-On page: https://addons.mozilla.org/en-US/firefox/addon/imdb-to-letterboxd-redirect/
