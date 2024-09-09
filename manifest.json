@@ -4,13 +4,19 @@
     "version": "1.0",
     "description": "This extension adds a floating button to IMDb movie pages that redirects you to the corresponding movie page on Letterboxd.",
     "permissions": [
-      "activeTab",
-      "tabs",
-      "*://www.imdb.com/*"
+      "activeTab"
     ],
     "icons": {
       "48": "icon.png"
     },
+
+    "web_accessible_resources": [
+      {
+        "resources": ["icon2.png"],
+        "matches": ["<all_urls>"]
+      }
+    ],
+
     "content_scripts": [
       {
         "matches": ["*://www.imdb.com/title/tt*"],

@@ -13,6 +13,11 @@
     const button = document.createElement('button');
     button.innerText = "Go to Letterboxd";
     button.id = "letterboxd-button";
+
+    // Add icon next to the button's text
+    const img = document.createElement('img');
+    img.src = chrome.runtime.getURL('icon2.png');  // Correctly fetch the image
+    button.appendChild(img);
   
     // Add click event listener to the button
     button.addEventListener('click', function() {

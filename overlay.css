@@ -7,23 +7,27 @@
 }
 
 #letterboxd-button {
-    display: flex; /* Use flexbox to align the icon and text */
-    align-items: center; /* Center align items vertically */
-    background-color: #2C343F; /* Set background color to gray */
+    background-color: #2C343F; /* Set background color */
     color: white;
     border: 1px solid #556678;
-    padding: 10px 15px;
+    padding: 8px 15px 8px 15px;
     font-size: 16px;
     font-family: Arial, sans-serif; /* Use Arial font */
     font-weight: bold; /* Make the font bold */
     border-radius: 7px;
     cursor: pointer;
     pointer-events: auto; /* Allow interaction with the button itself */
-    background-image: url('icon2.png'); /* Set background image to icon2.png */
-    background-size: 20px 20px; /* Adjust size of the icon */
-    background-repeat: no-repeat; /* Prevent repeating the icon */
-    background-position: right 10px center; /* Position the icon to the right of the button */
-    padding-right: 40px; /* Adjust padding to make space for the icon */
+    display: flex;
+    align-items: center; /* Center align items vertically */
+    justify-content: center;   
+    text-align: center; /* Center text horizontally within the button */
+}
+
+#letterboxd-button img {
+    width: 20px;  /* Set a width to control the size */
+    height: 20px; /* Set a height to maintain aspect ratio */
+    margin-left: 10px;  /* Add some spacing between the text and the icon */
+    vertical-align: middle;
 }
 
 #letterboxd-button:hover {
