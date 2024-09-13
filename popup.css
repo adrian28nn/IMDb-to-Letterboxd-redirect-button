@@ -1,0 +1,60 @@
+/* General body styling */
+body, html {
+	background: #363a4f; /* Header background color */
+	color: #cad3f5;
+	margin: 0;
+	font-family: system-ui;
+	user-select: none;
+}
+
+#elements-pane {
+	max-width: 360px;
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0.6rem 1rem;
+}
+
+header h1 {
+	font-size: 1rem;
+	margin: 0;
+	flex: 1; /* Allow header text to grow */
+}
+
+/* Custom size for Ko-Fi icon */
+.ko-fi-icon {
+	width: 1.7rem;
+	height: 1.7rem;
+}
+
+/* Custom size for GitHub icon */
+.github-icon {
+	width: 1.55rem;
+	height: 1.55rem;
+}
+
+/* Spacing between icons */
+header img {
+	margin-left: 0.5em;
+	vertical-align: middle;
+}
+
+#all-elements {
+	background: #1e2030; /* Main background color */
+	padding: 1rem;
+	border-bottom: 1px solid #363a4f; /* Divider color */
+}
+
+#shortcut-info {
+	font-size: 0.9em;
+	color: #aaa;
+	margin-top: 0.5rem;
+}
+
+.info {
+	font-size: 0.8em;
+	color: #666;
+}

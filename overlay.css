@@ -9,6 +9,7 @@
 #letterboxd-button {
     display: flex; /* Use flexbox to align the icon and text */
     align-items: center; /* Center align items vertically */
+    justify-content: center; /* Center align items horizontally */
     background-color: #2C343F; /* Set background color to gray */
     color: white;
     border: 1px solid #556678;
@@ -22,8 +23,33 @@
     background-image: url('icon2.png'); /* Set background image to icon2.png */
     background-size: 20px 20px; /* Adjust size of the icon */
     background-repeat: no-repeat; /* Prevent repeating the icon */
-    background-position: right 10px center; /* Position the icon to the right of the button */
-    padding-right: 40px; /* Adjust padding to make space for the icon */
+    background-position: calc(100% - 15px) center; /* Position the icon to the right of the button */
+    padding-right: 45px; /* Adjust padding to make space for the icon */
+    position: relative; /* Ensure the info container is positioned relative to this button */
+}
+
+#button-info {
+    display: none; /* Initially hidden */
+    position: absolute;
+    top: 100%; /* Position below the button */
+    left: 0;
+    background-color: #2C343F; /* Match button background color */
+    color: white;
+    padding: 10px;
+    border-radius: 0 0 7px 7px;
+    width: max-content;
+    max-width: 250px; /* Adjust max width as needed */
+    z-index: 10001; /* Ensure the info is above other content */
+    transition: opacity 0.3s ease, max-height 0.3s ease; /* Smooth transition */
+    opacity: 0;
+    max-height: 0; /* Hide content initially */
+    overflow: hidden;
+}
+
+#letterboxd-button:hover + #button-info {
+    display: block;
+    opacity: 1;
+    max-height: 300px; /* Adjust as needed for the content */
 }
 
 #letterboxd-button:hover {
