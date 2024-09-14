@@ -3,21 +3,31 @@
 <link rel="stylesheet" href="popup.css">
 
 <div id="elements-pane">
-	<header>
-		<h1>Letterboxd Redirect</h1>
-		<a href="https://ko-fi.com/nairdah" class="info-opener" target="_blank"><img src="ko-fi.svg" class="ko-fi-icon" title="Buy me a Coffee"></a>
-		<a href="https://github.com/adrian28nn" class="info-opener" target="_blank"><img src="github.svg" class="github-icon" title="View on GitHub"></a>
-	</header>
-	
-	<div id="all-elements">
+    <header class="header">
+        <h1 class="title">Letterboxd Redirect</h1>
+        <a href="https://ko-fi.com/nairdah" class="info-opener" target="_blank">
+            <img src="ko-fi.svg" class="icon ko-fi-icon" title="Buy me a Coffee">
+        </a>
+        <a href="https://github.com/adrian28nn" class="info-opener" target="_blank">
+            <img src="github.svg" class="icon github-icon" title="View on GitHub">
+        </a>
+    </header>
+    
+    <div id="all-elements" class="content">
 
-		and here i write things
-	
-    	<p id="shortcut-info">Redirect Shortcut: loading...</p>
-		<p class="info">
-			You can change the shortcut from <a href="about:addons">about:addons</a>, click the cogwheel and select Manage Extension Shortcuts.
-		</p>
-	</div>
+		<div class="settings-section">
+            <label for="toggle-overlay" class="settings-label">
+                Show Redirect Button <input type="checkbox" id="toggle-overlay">                
+            </label>
+        </div>
+
+        <p id="shortcut-info" class="shortcut-info">Redirect Shortcut: loading...</p>
+        <p class="info">
+            You can change the shortcut from <a href="about:addons">about:addons</a>, click the cogwheel and select Manage Extension Shortcuts.
+        </p>
+
+        
+    </div>
 </div>
 
 <script src="popup.js"></script>

@@ -1,60 +1,87 @@
 /* General body styling */
 body, html {
-	background: #363a4f; /* Header background color */
-	color: #cad3f5;
-	margin: 0;
-	font-family: system-ui;
-	user-select: none;
+    background: #363a4f; /* Header background color */
+    color: #cad3f5; /* Text color */
+    margin: 0;
+    font-family: system-ui; /* Font for the popup */
+    user-select: none; /* Prevent text selection */
 }
 
+/* Container for the entire popup */
 #elements-pane {
-	max-width: 360px;
+    max-width: 360px;
+    
 }
 
-header {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 0.6rem 1rem;
+/* Header section */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.6rem 1rem;
 }
 
-header h1 {
-	font-size: 1rem;
-	margin: 0;
-	flex: 1; /* Allow header text to grow */
+.title {
+    font-size: 1rem; /* Title font size */
+    margin: 0;
+    flex: 1; /* Makes the title take up available space */
 }
 
-/* Custom size for Ko-Fi icon */
+/* Icon styles */
+.icon {
+    vertical-align: middle; /* Align icons with text */
+    cursor: pointer; /* Make icons clickable */
+}
+
+/* Ko-Fi icon size */
 .ko-fi-icon {
-	width: 1.7rem;
-	height: 1.7rem;
+    width: 1.7rem;
+    height: 1.7rem;
 }
 
-/* Custom size for GitHub icon */
+/* GitHub icon size */
 .github-icon {
-	width: 1.55rem;
-	height: 1.55rem;
+    width: 1.55rem;
+    height: 1.55rem;
 }
 
-/* Spacing between icons */
-header img {
-	margin-left: 0.5em;
-	vertical-align: middle;
+/* Space between the icons */
+.header img {
+    margin-left: 0.5em;
 }
 
-#all-elements {
-	background: #1e2030; /* Main background color */
-	padding: 1rem;
-	border-bottom: 1px solid #363a4f; /* Divider color */
+/* Content section for the rest of the popup */
+.content {
+    background: #1e2030; /* Main background color */
+    padding: 1rem;
+
 }
 
-#shortcut-info {
-	font-size: 0.9em;
-	color: #aaa;
-	margin-top: 0.5rem;
+/* Shortcut information */
+.shortcut-info {
+    font-size: 0.9em;
+    color: #b8c0e0;
+    margin-top: 1em;
 }
 
+/* General info text styling */
 .info {
-	font-size: 0.8em;
-	color: #666;
+    font-size: 0.75em;
+    color: #a5adcb;
+}
+
+/* Settings section for the checkbox */
+.settings-section {
+    margin-top: 0rem;
+}
+
+/* Checkbox label styling */
+.settings-label {
+    font-size: 0.9em;
+    color: #cad3f5; /* Text color for the label */
+}
+
+/* Style for the checkbox */
+#toggle-overlay {
+    margin-left: 0.5rem; /* Space between the checkbox and label text */
 }

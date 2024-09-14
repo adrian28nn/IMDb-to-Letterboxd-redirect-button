@@ -6,6 +6,7 @@
     "permissions": [
       "activeTab",
       "tabs",
+      "storage",
       "*://www.imdb.com/*"
     ],
     "icons": {
