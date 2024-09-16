@@ -85,3 +85,14 @@ body, html {
 #toggle-overlay {
     margin-left: 0.5rem; /* Space between the checkbox and label text */
 }
+
+/* Custom link color for "about:addons" */
+a[href="about:addons"] {
+    color: #f5a97f; /* Custom link color */
+    text-decoration: underline; /* Optional, to keep the link look */
+  }
+  
+  /* Optional hover effect for the link */
+  a[href="about:addons"]:hover {
+    color: #eed49f; /* Custom color on hover */
+  }
