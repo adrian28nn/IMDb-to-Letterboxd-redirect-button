@@ -1,19 +1,17 @@
-/* General body styling */
+
 body, html {
-    background: #363a4f; /* Header background color */
-    color: #cad3f5; /* Text color */
+    background: #363a4f;
+    color: #cad3f5;
     margin: 0;
-    font-family: system-ui; /* Font for the popup */
-    user-select: none; /* Prevent text selection */
+    font-family: system-ui;
+    user-select: none;
 }
 
-/* Container for the entire popup */
 #elements-pane {
     max-width: 360px;
     
 }
 
-/* Header section */
 .header {
     display: flex;
     justify-content: center;
@@ -22,77 +20,66 @@ body, html {
 }
 
 .title {
-    font-size: 1rem; /* Title font size */
+    font-size: 1rem;
     margin: 0;
-    flex: 1; /* Makes the title take up available space */
+    flex: 1;
 }
 
-/* Icon styles */
 .icon {
-    vertical-align: middle; /* Align icons with text */
-    cursor: pointer; /* Make icons clickable */
+    vertical-align: middle;
+    cursor: pointer;
 }
 
-/* Ko-Fi icon size */
 .ko-fi-icon {
     width: 1.7rem;
     height: 1.7rem;
 }
 
-/* GitHub icon size */
 .github-icon {
     width: 1.55rem;
     height: 1.55rem;
 }
 
-/* Space between the icons */
 .header img {
     margin-left: 0.5em;
 }
 
-/* Content section for the rest of the popup */
 .content {
-    background: #1e2030; /* Main background color */
+    background: #1e2030;
     padding: 1rem;
 
 }
 
-/* Shortcut information */
 .shortcut-info {
     font-size: 0.9em;
     color: #b8c0e0;
     margin-top: 1em;
 }
 
-/* General info text styling */
 .info {
     font-size: 0.75em;
     color: #a5adcb;
 }
 
-/* Settings section for the checkbox */
 .settings-section {
     margin-top: 0rem;
 }
 
-/* Checkbox label styling */
 .settings-label {
     font-size: 0.9em;
-    color: #cad3f5; /* Text color for the label */
+    color: #cad3f5;
 }
 
-/* Style for the checkbox */
 #toggle-overlay {
-    margin-left: 0.5rem; /* Space between the checkbox and label text */
+    margin-left: 0.5rem;
 }
 
-/* Custom link color for "about:addons" */
 a[href="about:addons"] {
-    color: #f5a97f; /* Custom link color */
-    text-decoration: underline; /* Optional, to keep the link look */
+    color: #f5a97f;
+    text-decoration: underline; 
   }
   
-  /* Optional hover effect for the link */
+
   a[href="about:addons"]:hover {
-    color: #eed49f; /* Custom color on hover */
+    color: #eed49f;
   }

@@ -1,7 +1,6 @@
 console.log("content.js loaded successfully");
 
 (function() {
-    // Check if we are on a movie page by looking for the IMDb ID in the URL
     const imdbIdMatch = window.location.href.match(/tt\d+/);
     if (!imdbIdMatch) return;
 
@@ -9,7 +8,7 @@ console.log("content.js loaded successfully");
 
     const imdbId = imdbIdMatch[0];
 
-    // Function to create the overlay
+    // create the overlay
     function createOverlay() {
         // Check if the overlay already exists
         if (document.getElementById('letterboxd-overlay')) return;
@@ -23,18 +22,22 @@ console.log("content.js loaded successfully");
         button.innerText = "Go to Letterboxd";
         button.id = "letterboxd-button";
 
+       
+       /* Placeholder
+       
         // Create the info container that will appear on hover
         const info = document.createElement('div');
         info.id = "button-info";
 
-        // Placeholder content - replace with actual data fetching logic
         
-        //
+        
         info.innerHTML = `
             <p>Rating: 8.2</p>
             <p>Watched by: 5000 members</p>
             <p>Fans: 2000</p>
         `;
+
+        */
 
         // Add click event listener to the button
         button.addEventListener('click', function() {

@@ -14,9 +14,9 @@ browser.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
 // Listen for messages from the popup
 browser.runtime.onMessage.addListener((message) => {
     if (message.action === 'updateOverlay') {
-        // Get all IMDb tabs
+        // Get imdb movie tabs
         browser.tabs.query({ url: '*://www.imdb.com/title/tt*' }, (tabs) => {
-            // Send the updateOverlay message to all IMDb tabs
+            // Send the updateOverlay message to all imdb movie tabs
             tabs.forEach((tab) => {
                 browser.tabs.sendMessage(tab.id, { action: 'toggleOverlay', showOverlay: message.showOverlay });
             });
